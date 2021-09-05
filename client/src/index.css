@@ -1,0 +1,42 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100%;
+}
+html {
+  height: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: calc(10px + 1vmin);
+  border: 0;
+}
+
+input,
+button {
+  padding: 10px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+#root {
+  height: 100%;
+}
