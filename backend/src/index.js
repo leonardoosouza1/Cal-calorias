@@ -4,13 +4,10 @@ const { ApolloServer } = require("apollo-server");
 const typeDefs = require("./typeDefs");
 const resolvers = require("./resolvers");
 // Database
-const db = {
-  host: process.env.DB_HOST,
-  user: process.env.DB_USER,
-  pass: process.env.DB_PASS,
-  name: process.env.DB_NAME,
-};
-const dbUri = `mongodb://unionsolucoesw01:leoLEO15092020AL@unionsolucoesw01.mongo71-farm1.kinghost.net/unionsolucoesw01?retryWrites=true&w=majority`;
+
+const DB = process.env.DB_URL;
+
+const dbUri = DB;
 const dbOptions = {
   useNewUrlParser: true,
   useUnifiedTopology: true,
